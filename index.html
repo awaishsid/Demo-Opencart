@@ -23,7 +23,7 @@
                 <p>My Account</p>
                 <i class="fa-solid fa-caret-down"></i>
                 <i class="fa-solid fa-heart"></i>
-                <p>Wish List(0)</p>
+                <p >Wish List(<span id="wish">0</span>)</p>
                 <i class="fa-solid fa-cart-shopping"></i>
                 <p>Shopping Cart</p>
                 <i class="fa-solid fa-share"></i>
@@ -38,7 +38,7 @@
 
             <div class="searchandcart">
                 <div class='search'>
-                    <input type="text" placeholder="search">
+                    <input type="text" placeholder="search" class="searchinp">
                     <div class="magnifighing">
                         <i class="fa-solid fa-magnifying-glass">
 
@@ -47,9 +47,9 @@
                 </div>
                 <div class="cart">
                     <i class="fa-solid fa-cart-shopping"></i>
-                    <span>0</span>
-                    <p>items(s)-0.00
-                        <i class="fa-solid fa-dollar-sign"></i></p>
+                    <span id='cart-products'>0</span>
+                    <p>items(s)-<span id="total-price">0.00</span>
+                    <i class="fa-solid fa-dollar-sign"></i></p>
                 </div>
             </div>
         </div>
@@ -68,81 +68,6 @@
         </div>
         <p id="fet">Featured</p>
         <div class="featuredproducts">
-            <div class="product">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/macbook_1-200x200.jpg" alt="macbook">
-                <h3 class="title">MacBook</h3>
-                <p class="detail">Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, t..</p>
-                <div class="pricing">
-                    <p id="price">$602.00</p>
-                    <p id="tax">Ex Tax:$500.00</p>
-                </div>
-                <div class="tags">
-                    
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/iphone_1-200x200.jpg" alt="iphone">
-                <h3 class="title">iPhone</h3>
-                <p class="detail">iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name o..</p>
-                <div class="pricing">
-                    <p id="price">$613.00</p>
-                    <p id="tax">Ex Tax:$101.00</p>
-                </div>
-                <div class="tags">
-                    
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/apple_cinema_30-200x200.jpg" alt="cinemaapple">
-                <h3 class="title">Apple Cinema 30''</h3>
-                <p class="detail">The 30-inch Apple Cinema HD Display delivers an amazing 2560 x 1600 pixel resolution. Designed speci..</p>
-                <div class="pricing">
-                    <p id="price">$110.00</p>
-                    <p id="tax">Ex Tax:$90.00</p>
-                </div>
-                <div class="tags">
-                    
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/canon_eos_5d_1-200x200.jpg" alt="canoncamera">
-                <h3 class="title">Canon EOS 5D</h3>
-                <p class="detail">Canon's press material for the EOS 5D states that it 'defines (a) new D-SLR category', while we're n..</p>
-                <div class="pricing">
-                    <p id="price">$98.00</p>
-                    <p id="tax">Ex Tax:$80.00</p>
-                </div>
-                <div class="tags">
-                    
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div>
-            <!-- <div class="product">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/macbook_1-200x200.jpg" alt="macbook">
-                <h3 class="title">MacBook</h3>
-                <p class="detail">Intel Core 2 Duo processor Powered by an Intel Core 2 Duo processor at speeds up to 2.16GHz, t..</p>
-                <div class="pricing">
-                    <p id="price">$602.00</p>
-                    <p id="tax">Ex Tax:$500.00</p>
-                </div>
-                <div class="tags">
-                    
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-heart"></i>
-                </div>
-            </div> -->
         </div>
 
         <div class="brands">
@@ -210,6 +135,25 @@
             <p>Your Store 2024</p>
         </div>
     </footer>
+
+    <!-- cart popUp -->
+     <div class="container">
+        <div class="wrapper">
+            <div class="headbar">
+                <p>Home/Shopping Cart</p>
+                <h2>Shopping Cart (<span id="shipitem">0</span>)items</h2>
+            </div>
+            <div class="popupcart">
+                <div class="cartproduct">
+                    
+                </div>
+                <div class="btn">
+                    <button class="removepopup">Close</button>
+                    <button>Procced to checkout</button>
+                </div>
+            </div>
+        </div>
+     </div>
     <script src='app.js'></script>
 </body>
 </html>
