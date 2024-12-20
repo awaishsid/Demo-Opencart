@@ -30,8 +30,18 @@ header{
         color: gray;
       }
     }
+    >.links a{
+      color: inherit;
+      display: flex;
+      gap: 10px;
+      text-align: center;
+      >p{
+        color: gray;
+      }
+    }
   }
 }
+
 /* responsiveness for header */
 @media (max-width:800px){
   header p{
