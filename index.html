@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>replica</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="cont">
+            <div class="lang">
+                <i class="fa-solid fa-dollar-sign"></i>
+                <p>Currency</p>
+                <i class="fa-solid fa-caret-down"></i>
+                
+            </div>
+            <div class="links">
+                <i class="fa-solid fa-phone"></i>
+                <p>123456789</p>
+                <i class="fa-solid fa-user"></i>
+                <p>My Account</p>
+                <i class="fa-solid fa-caret-down"></i>
+                <i class="fa-solid fa-heart"></i>
+                <p >Wish List(<span id="wish">0</span>)</p>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Shopping Cart</p>
+                <i class="fa-solid fa-share"></i>
+                <p>Checkout</p>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <div class="searchbar">
+            <img src="https://demo.opencart.com/image/catalog/opencart-logo.png" alt="logo">
+
+            <div class="searchandcart">
+                <div class='search'>
+                    <input type="text" placeholder="search" class="searchinp">
+                    <div class="magnifighing">
+                        <i class="fa-solid fa-magnifying-glass">
+
+                        </i>
+                    </div>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id='cart-products'>0</span>
+                    <p>items(s)-<span id="total-price">0.00</span>
+                    <i class="fa-solid fa-dollar-sign"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="categories">
+            <div id="non">
+                
+            <p >categories</p>
+            <i class="fa-solid fa-bars" ></i>
+            </div>
+            <ul>
+                <li>Destops</li>
+                <li>Laptops & Notebooks</li>
+                <li>Components</li>
+                <li>Tablets</li>
+                <li>Software</li>
+                <li>Phone</li>
+                <li>Camera</li>
+                <li>Mp3-Player</li>
+            </ul>
+        </div>
+        <div class="imagescroller">
+            <img src="https://demo.opencart.com/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg" alt="" id='imagesscroll'>
+            <div class="arrowleft"><i class="fa-solid fa-angle-left"></i></div>
+            <div class="arrowright"><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        <div class="dots">
+            <div class="dot "></div>
+            <div class="dot"></div>
+        </div>
+        <p id="fet">Featured</p>
+        <div class="featuredproducts">
+        </div>
+
+        <div class="brands">
+            <div class="block1">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/harley-130x100.png" alt="">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/dell-130x100.png" alt="">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/disney-130x100.png" alt="">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/cocacola-130x100.png" alt="">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/burgerking-130x100.png" alt="">
+            </div>
+            <div class="block2">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/canon-130x100.png" alt="">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/nfl-130x100.png" alt="">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/redbull-130x100.png" alt="">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/sony-130x100.png" alt="">
+                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/starbucks-130x100.png" alt="">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="alllinks">
+            <div >
+                <p class="bold">Information</p>
+                <ul>
+                    <li>Terms & conditions</li>
+                    <li>Delivery Infromation</li>
+                    <li>About Us</li>
+                    <li>Privacy Policy</li>
+    
+                </ul>
+            </div>
+            <div >
+                <p>Customer Sercice</p>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Returns</li>
+                    <li>Site Map</li>
+                </ul>
+            </div>
+            <div>
+                <p class="bold">Extras</p>
+                <ul>
+                    <li>Brands</li>
+                    <li>Gift Certificate</li>
+                    <li>Affiliate</li>
+                    <li>Specials</li>
+                </ul>
+            </div>
+            <div>
+                <p class="bold">
+                    My Account
+                </p>
+                <ul>
+                    <li>My Account</li>
+                    <li>Order History</li>
+                    <li>wish List</li>
+                    <li>Newsletter </li>
+                </ul>
+            </div>
+
+        </div>
+        <hr>
+        <div class="closing">
+            <p>Powered By FullStact Fishters</p>
+            <p>Your Store 2024</p>
+        </div>
+    </footer>
+
+    <!-- cart popUp -->
+     <div class="container">
+        <div class="wrapper">
+            <div class="headbar">
+                <p>Home/Shopping Cart</p>
+                <h2>Shopping Cart (<span id="shipitem">0</span>)items</h2>
+            </div>
+            <div class="popupcart">
+                <div class="cartproduct">
+                    
+                </div>
+                <div class="btn">
+                    <button class="removepopup">Close</button>
+                    <button>Procced to checkout</button>
+                </div>
+            </div>
+        </div>
+     </div>
+    <script src='app.js'></script>
+</body>
+</html>
