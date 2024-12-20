@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>replica</title>
-    <link rel="stylesheet" href="./style.css">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -70,34 +71,17 @@
                 <li>Mp3-Player</li>
             </ul>
         </div>
-        <div class="imagescroller">
-            <img src="https://demo.opencart.com/image/cache/catalog/demo/banners/MacBookAir-1140x380.jpg" alt="" id='imagesscroll'>
-            <div class="arrowleft"><i class="fa-solid fa-angle-left"></i></div>
-            <div class="arrowright"><i class="fa-solid fa-angle-right"></i></div>
+        <div class="linkbar">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="" id="itemname"></a>
+            <i class="fa-solid fa-angle-right"></i>
         </div>
-        <div class="dots">
-            <div class="dot "></div>
-            <div class="dot"></div>
+        <div class="showitem">
         </div>
-        <p id="fet">Featured</p>
-        <div class="featuredproducts">
-        </div>
-
-        <div class="brands">
-            <div class="block1">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/harley-130x100.png" alt="">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/dell-130x100.png" alt="">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/disney-130x100.png" alt="">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/cocacola-130x100.png" alt="">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/burgerking-130x100.png" alt="">
-            </div>
-            <div class="block2">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/canon-130x100.png" alt="">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/nfl-130x100.png" alt="">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/redbull-130x100.png" alt="">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/sony-130x100.png" alt="">
-                <img src="https://demo.opencart.com/image/cache/catalog/demo/manufacturer/starbucks-130x100.png" alt="">
-            </div>
+        <div class="desc">
+            <p id="descriptive">Description</p>
+            <p id="para">iPhone is a revolutionary new mobile phone that allows you to make a call by simply tapping a name or number in your address book, a favorites list, or a call log. It also automatically syncs all your contacts from a PC, Mac, or Internet service. And it lets you select and listen to voicemail messages in whatever order you want just like email.</p>
         </div>
     </main>
     <footer>
@@ -148,25 +132,6 @@
             <p>Your Store 2024</p>
         </div>
     </footer>
-
-    <!-- cart popUp -->
-     <div class="container">
-        <div class="wrapper">
-            <div class="headbar">
-                <p>Home/Shopping Cart</p>
-                <h2>Shopping Cart (<span id="shipitem">0</span>)items</h2>
-            </div>
-            <div class="popupcart">
-                <div class="cartproduct">
-                    
-                </div>
-                <div class="btn">
-                    <button class="removepopup">Close</button>
-                    <button>Procced to checkout</button>
-                </div>
-            </div>
-        </div>
-     </div>
-    <script src='app.js'></script>
+    <script src="product.js"></script>
 </body>
 </html>

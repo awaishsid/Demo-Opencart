@@ -41,25 +41,33 @@ async function fetchdata() {
 fetchdata()
 function displaydata(data) {
     fetaturedProducts.innerHTML = ''
-    data.map((el, i) => {
-        let product = document.createElement('div')
-        product.className = 'product'
-        product.innerHTML = `
-         <img src="${el.image}" alt="${el.title}">
-                <h3 class="title">${el.title}</h3>
-                <p class="detail">${el.desctription}</p>
-                <div class="pricing">
-                    <p id="price">$${el.price}.00</p>
-                    <p id="tax">Ex Tax:$${el.tax}.00</p>
-                </div>
-                <div class="tags">
-                <i class="fa-solid fa-cart-shopping" id=${i}></i>
-                <i class="fa-solid fa-heart"></i>
-                <i class="fa-solid fa-arrows-turn-to-dots"></i>
-                </div>
-        `
-        fetaturedProducts.appendChild(product)
-    })
+    if(data.length>0){
+        data.map((el, i) => {
+            let product = document.createElement('a')
+            product.href=`/product.html?name=${el.title}`
+            // product.target="_blank"
+            product.className = 'product'
+            product.innerHTML = `
+             <img src="${el.image}" alt="${el.title}">
+                    <h3 class="title">${el.title}</h3>
+                    <p class="detail">${el.desctription}</p>
+                    <div class="pricing">
+                        <p id="price">$${el.price}.00</p>
+                        <p id="tax">Ex Tax:$${el.tax}.00</p>
+                    </div>
+                    <div class="tags">
+                    <i class="fa-solid fa-cart-shopping" id=${i}></i>
+                    <i class="fa-solid fa-heart"></i>
+                    <i class="fa-solid fa-arrows-turn-to-dots"></i>
+                    </div>
+            `
+            fetaturedProducts.appendChild(product)
+        })
+
+    }
+    else{
+        fetaturedProducts.innerHTML = `<p>Nothing to show</p>`
+    }
 }
 
 // adding to cart functinality

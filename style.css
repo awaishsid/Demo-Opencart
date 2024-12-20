@@ -9,7 +9,9 @@ margin:0;
 width:100%;
 height:100%;
 }
-
+a{
+  text-decoration: none;
+}
 /* header styling */
 header{
   background: rgba(128, 128, 128, 0.295);
@@ -126,6 +128,40 @@ main{
   margin-block: 10px;
   color: white;
   border-radius: 5px;
+  >div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  >ul li{
+    list-style-type:none ;
+  }
+  >ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 30px;
+   }
+   >ul li:first-child{
+    margin-bottom: 20px;
+   }
+   overflow: hidden;
+}
+#non{
+  display: none;
+}
+@media (max-width:900px) {
+  #non{
+    display: flex;
+  }
+  .categories{
+    >ul{
+      display: none;
+    }
+  }
 }
 
 /* image scroller */
@@ -398,15 +434,15 @@ hr{
   z-index: 10;
 }
 .wrapper{
-  max-width: 80%;
+  width: 80%;
+  max-width: 600px;
   margin: auto;
 }
 .headbar{
-  /* background: white; */
-  color: white;
-  backdrop-filter: blur(5px);
+  border-radius: 3px;
+  margin-top: 10px;
+  background: white;
   width: 100%;
-  border-radius:15px ;
   padding: 10px;
   >p{
     font-size: 13px;
@@ -415,7 +451,7 @@ hr{
 }
 .popupcart{
   margin-top: 20px;
-  
+  border-radius: 5px;
   background: white;
 }
 .cartproduct{
@@ -471,22 +507,31 @@ hr{
   display: none;
 }
 .btn{
+  border-radius: 5px;
+  margin-top: 10px;
   display: grid;
   border: 2px solid black;
   grid-template-columns: repeat(2,1fr);
   >button{
+    cursor: pointer;
     font-weight: 600;
     font-size: 18px;
     padding: 10px;
-    background: rgba(0, 128, 0, 0.514);
     border: none;
+    background: rgba(0, 128, 0, 0.683);
     outline: none;
   }
   >button:hover{
-    background: rgba(0, 128, 0, 0.683);
+    background: rgba(0, 128, 0, 0.514);
   }
   >button:first-child{
     border-right:2px solid black ;
+  }
+  .removepopup{
+    background: rgba(255, 0, 0, 0.744);
+  }
+  .removepopup:hover{
+    background: rgba(255, 0, 0, 0.466);
   }
 }
 #divider{
@@ -502,6 +547,10 @@ hr{
 }
 
 @media (max-width:450px){
+  .prp{
+    flex-direction: column;
+    gap: 10px;
+  }
   .prp div img{
     width: 30px;
   }
