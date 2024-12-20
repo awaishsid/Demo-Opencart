@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .cart-section {
+            flex: 3;
+            background: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th, table td {
+            text-align: left;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        table th {
+            background-color: #f2f2f2;
+        }
+
+        table td img {
+            max-width: 60px;
+            border: 1px solid #ddd;
+            padding: 5px;
+        }
+
+        .btn {
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            color: white;
+            font-size: 14px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-add {
+            background-color: #007bff;
+        }
+
+        .btn-remove {
+            background-color: #dc3545;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-add:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-remove:hover {
+            background-color: #b32d3a;
+        }
+
+        .btn-continue {
+            display: inline-block;
+            text-decoration: none;
+            background: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-align: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-continue:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .sidebar {
+            flex: 1;
+            background: white;
+            margin-left: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 15px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+        .sidebar ul li a i {
+            margin-right: 10px;
+        }
+
+        .sidebar ul li a:hover {
+            color: #007bff;
+            transform: translateX(5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Cart Section -->
+        <div class="cart-section">
+            <h1>Use Coupon Code</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Product Name</th>
+                        <th>Model</th>
+                        <th>Stock</th>
+                        <th>Unit Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/60" alt="Canon EOS 5D"></td>
+                        <td>Canon EOS 5D</td>
+                        <td>Product 3</td>
+                        <td>In Stock</td>
+                        <td><strong>$80.00</strong> <del>$100.00</del></td>
+                        <td>
+                            <button class="btn btn-add"><i class="fas fa-cart-plus"></i></button>
+                            <button class="btn btn-remove"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://via.placeholder.com/60" alt="Apple Cinema 30"></td>
+                        <td>Apple Cinema 30"</td>
+                        <td>Product 15</td>
+                        <td>In Stock</td>
+                        <td><strong>$90.00</strong> <del>$100.00</del></td>
+                        <td>
+                            <button class="btn btn-add"><i class="fas fa-cart-plus"></i></button>
+                            <button class="btn btn-remove"><i class="fas fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="#" class="btn-continue">Continue</a>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <ul>
+                <li><a href="#"><i class="fas fa-user"></i> My Account</a></li>
+                <li><a href="#"><i class="fas fa-edit"></i> Edit Account</a></li>
+                <li><a href="#"><i class="fas fa-key"></i> Password</a></li>
+                <li><a href="#"><i class="fas fa-book"></i> Address Book</a></li>
+                <li><a href="#"><i class="fas fa-heart"></i> Wish List</a></li>
+                <li><a href="#"><i class="fas fa-history"></i> Order History</a></li>
+                <li><a href="#"><i class="fas fa-download"></i> Downloads</a></li>
+                <li><a href="#"><i class="fas fa-sync"></i> Recurring Payments</a></li>
+                <li><a href="#"><i class="fas fa-gift"></i> Reward Points</a></li>
+                <li><a href="#"><i class="fas fa-undo"></i> Returns</a></li>
+                <li><a href="#"><i class="fas fa-exchange-alt"></i> Transactions</a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i> Newsletter</a></li>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

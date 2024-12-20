@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCart Replica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 20px; background-color: #f9f9f9;">
+
+    <!-- Header Section -->
+    <div style="display: flex; align-items: center; border-bottom: 1px solid #ccc; padding-bottom: 10px; background-color: #fff;">
+        <div style="flex: 1;">
+            <img src="https://www.opencart.com/storage/catalog/opencart-logo.svg" alt="OpenCart Logo" style="height: 40px;">
+        </div>
+        <div style="flex: 3; display: flex; justify-content: space-evenly; align-items: center;">
+            <div style="text-align: center;">
+                <div style="width: 30px; height: 30px; background-color: #7b6d7e; color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: auto;">1</div>
+                <span style="margin-top: 5px; font-size: 14px; color: #666;">Account</span>
+            </div>
+            <div style="width: 80px; height: 1px; background-color: #ccc;"></div>
+            <div style="text-align: center;">
+                <div style="width: 30px; height: 30px; background-color: #7b6d7e; color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: auto;">2</div>
+                <span style="margin-top: 5px; font-size: 14px; color: #666;">Address</span>
+            </div>
+            <div style="width: 80px; height: 1px; background-color: #ccc;"></div>
+            <div style="text-align: center;">
+                <div style="width: 30px; height: 30px; background-color: #fff; color: #ccc; border: 1px solid #ccc; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: auto;">3</div>
+                <span style="margin-top: 5px; font-size: 14px; color: #666;">Payment</span>
+            </div>
+        </div>
+        <div style="flex: 1; text-align: right; font-size: 14px; color: #666;">
+            <span style="margin-right: 5px;"><i class="fas fa-lock" style="font-size: 16px; vertical-align: middle;"></i></span>
+            This connection is secure
+        </div>
+    </div>
+
+    <!-- Main Content with Right Sidebar -->
+    <div style="display: flex; gap: 20px; margin-top: 20px;">
+        <!-- Main Section -->
+        <div style="flex: 2; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <div style="margin-bottom: 20px;">
+            <label>
+                <input type="checkbox" style="margin-right: 10px;"> My delivery and billing addresses are the same.
+            </label>
+        </div>
+        <div style="display: flex; gap: 20px; margin-bottom: 20px;">
+            <div style="flex: 1; border: 1px solid #ccc; border-radius: 8px; padding: 10px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; font-weight: bold; color: #666;">
+                    <span><i class="fas fa-wallet" style="margin-right: 5px;"></i> Payment Address</span>
+                    <a href="#" style="color: #007bff; text-decoration: none;">+ Add</a>
+                </div>
+                <div style="font-size: 14px; color: #666;">
+                    Aman Kumar, sfdg, sdgsdgse - 827741 | Karnataka - India<br>
+                    <span style="color: #999;">Default Address</span> | <a href="#" style="color: #007bff; text-decoration: none;">Edit Address</a>
+                </div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ccc; border-radius: 8px; padding: 10px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; font-weight: bold; color: #666;">
+                    <span><i class="fas fa-truck" style="margin-right: 5px;"></i> Shipping Address</span>
+                    <a href="#" style="color: #007bff; text-decoration: none;">+ Add</a>
+                </div>
+                <div style="font-size: 14px; color: #666;">
+                    Aman Kumar, sfdg, sdgsdgse - 827741 | Karnataka - India<br>
+                    <span style="color: #999;">Default Address</span> | <a href="#" style="color: #007bff; text-decoration: none;">Edit Address</a>
+                </div>
+            </div>
+        </div>
+        <div style="display: flex; gap: 20px;">
+            <div style="flex: 1; border: 1px solid #ccc; border-radius: 8px; padding: 10px;">
+                <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #666;">
+                    <i class="fas fa-shipping-fast" style="margin-right: 5px;"></i> Delivery Options
+                </div>
+                <div style="font-size: 14px; color: #666;">
+                    <label style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <input type="radio" name="delivery" style="margin-right: 10px;"> Free Shipping
+                        <span>Free</span>
+                    </label>
+                    <label style="display: flex; justify-content: space-between; align-items: center;">
+                        <input type="radio" name="delivery" style="margin-right: 10px;"> Flat Shipping Rate
+                        <span>$5.00</span>
+                    </label>
+                </div>
+            </div>
+            <div style="flex: 1; border: 1px solid #ccc; border-radius: 8px; padding: 10px; display: flex; flex-direction: column;">
+                <div style="font-size: 14px; font-weight: bold; margin-bottom: 10px; color: #666;">
+                    <i class="fas fa-comment-alt" style="margin-right: 5px;"></i> Order Comment
+                </div>
+                <textarea placeholder="Enter your Comment..." style="flex: 1; width: 80%; border: 1px solid #ccc; border-radius: 5px; padding: 10px; font-size: 14px; color: #666;"></textarea>
+            </div>
+        </div>
+        <div style="margin-top: 20px; display: flex; justify-content: space-between; align-items: center;">
+            <label>
+                <input type="checkbox" style="margin-right: 10px;"> I have read and agree to the <a href="#" style="color: #007bff; text-decoration: none;">Terms & Conditions</a>
+            </label>
+            <button style="background-color: #007bff; color: white; border: none; border-radius: 5px; padding: 10px 20px; font-size: 14px; cursor: pointer;">CONTINUE TO PAYMENT</button>
+        </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div style="width: 300px; background-color: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); font-family: Arial, sans-serif; font-size: 14px;">
+            <!-- Cart Header -->
+            <h4 style="font-size: 14px; font-weight: bold; color: #333; margin-bottom: 15px; display: flex; align-items: center; justify-content: space-between;">
+                <span>
+                    <i class="fas fa-shopping-cart" style="margin-right: 5px; color: #666;"></i> Cart - 1 item(s)
+                </span>
+                <i class="fas fa-chevron-up" style="font-size: 12px; color: #666; cursor: pointer;"></i>
+            </h4>
+        
+            <!-- Product Details -->
+            <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                <img src="https://via.placeholder.com/60" alt="Canon EOS 5D" style="width: 60px; height: 60px; object-fit: cover; border: 1px solid #ddd; border-radius: 5px;">
+                <div style="flex: 1; margin-left: 10px; font-size: 14px; color: #333;">
+                    Canon EOS 5D<br>
+                    <small style="color: #999;">1 × $80.00</small>
+                </div>
+                <div style="font-weight: bold; color: #333;">$80.00</div>
+            </div>
+        
+            <!-- Quantity and Actions -->
+            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                <button style="width: 30px; height: 30px; border: 1px solid #ddd; background: #f9f9f9; border-radius: 5px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <i class="fas fa-minus" style="color: #333; font-size: 12px;"></i>
+                </button>
+                <span style="font-weight: bold; font-size: 14px; color: #333;">1</span>
+                <button style="width: 30px; height: 30px; border: 1px solid #ddd; background: #f9f9f9; border-radius: 5px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <i class="fas fa-plus" style="color: #333; font-size: 12px;"></i>
+                </button>
+                <button style="width: 30px; height: 30px; border: none; background: #f44336; color: #fff; border-radius: 5px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <i class="fas fa-trash"></i>
+                </button>
+                <button style="width: 30px; height: 30px; border: 1px solid #ddd; background: #f9f9f9; color: #333; border-radius: 5px; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <i class="fas fa-heart"></i>
+                </button>
+            </div>
+        
+            <!-- Coupon Section -->
+            <div style="margin-bottom: 20px;">
+                <h5 style="font-size: 14px; font-weight: bold; color: #333; margin-bottom: 10px;">Options</h5>
+                <label style="font-size: 14px; color: #333; margin-bottom: 5px;">Use Coupon</label>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="text" value="test10" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+                    <button style="border: none; background-color: #007bff; color: #fff; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 14px;">Edit Coupon</button>
+                </div>
+            </div>
+        
+            <!-- Voucher Section -->
+            <div style="margin-bottom: 20px;">
+                <label style="font-size: 14px; color: #333; margin-bottom: 5px;">Use Voucher</label>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <input type="text" placeholder="Enter voucher code" style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px;">
+                    <button style="border: none; background-color: #28a745; color: #fff; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 14px;">✔</button>
+                </div>
+            </div>
+        
+            <!-- Totals -->
+            <div style="border-top: 1px solid #ddd; padding-top: 10px;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 5px; font-size: 14px; color: #333;">
+                    <span>Sub-Total:</span>
+                    <span>$80.00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; color: #333;">
+                    <span>Free Shipping:</span>
+                    <span>Free</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 16px; font-weight: bold; color: #333;">
+                    <span>Total:</span>
+                    <span>$80.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
