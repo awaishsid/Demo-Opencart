@@ -129,7 +129,7 @@ body, HTML {
 @media (max-width: 767px) {
     #login-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 5%;
         max-width: 85vw;
         margin: auto;

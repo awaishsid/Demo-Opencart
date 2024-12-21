@@ -44,11 +44,11 @@ function displaydata(data) {
     if(data.length>0){
         data.map((el, i) => {
             let product = document.createElement('a')
-            product.href=`/product.html?name=${el.title}`
+            // product.href=`/product.html?name=${el.title}`
             // product.target="_blank"
             product.className = 'product'
             product.innerHTML = `
-             <img src="${el.image}" alt="${el.title}">
+             <a href="/product.html?name=${el.title}"><img src="${el.image}" alt="${el.title}"></a>
                     <h3 class="title">${el.title}</h3>
                     <p class="detail">${el.desctription}</p>
                     <div class="pricing">
@@ -141,6 +141,9 @@ let cartbar = document.querySelector('.cart')
 let popup = document.querySelector('.container')
 let removepopup = document.querySelector('.removepopup')
 cartbar.addEventListener('click', () => {
+    popup.classList.add('show')
+})
+document.querySelector('.fa-cart-shopping').addEventListener('click', () => {
     popup.classList.add('show')
 })
 
@@ -244,3 +247,8 @@ function calldisplaydata(){
     }
     displaydata(filtered)
 }
+
+// redirect to checkout
+document.querySelector('#gotocheckout').addEventListener('click',(e)=>{
+    window.location.assign('./checkoutnwishlist/checkout.html')
+})

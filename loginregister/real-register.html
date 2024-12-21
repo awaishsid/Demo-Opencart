@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="real-register.js" defer></script>
 </head>
 
 <body>
@@ -60,25 +61,26 @@
     </main>
 
     <div id="login-container">
-        <div id="center-login">
-            <h2>Register Account</h2><br>
-            <p>If you already have an account with us, please login at the <span style="color: #2096C3;">login page.</span></p><br>
-            <h4>Your Personal Details</h4>
-            <hr>
-            <p><span>*</span> First Name</p>
-            <input type="text" placeholder="First Name" required>
-            <p><span>*</span>Last Name</p>
-            <input type="text" placeholder="Last Name" required><br>
-            <p><span>*</span>E-mail</p>
-            <input type="email" placeholder="E-mail" required >
-            <h4>Your Password</h4>
-            <hr>
-            <p><span>*</span>Password</p>
-            <input type="password" placeholder="Password" required>
-            <a href="./initial-login.html">
-                <button>Continue</button>
-            </a>
-        </div>
+        <form action="./initial-login.html">
+            <div id="center-login">
+                <h2>Register Account</h2><br>
+                <p>If you already have an account with us, please login at the <span style="color: #2096C3;">login page.</span></p><br>
+                <h4>Your Personal Details</h4>
+                <hr>
+                <p><span>*</span> First Name</p>
+                <input type="text" placeholder="First Name" id="firstname" required>
+                <p><span>*</span>Last Name</p>
+                <input type="text" placeholder="Last Name" id="lastname" required><br>
+                <p><span>*</span>E-mail</p>
+                <input type="email" placeholder="E-mail" id="email" required >
+                <h4>Your Password</h4>
+                <hr>
+                <p><span>*</span>Password</p>
+                <input type="password" placeholder="Password" id="password" required>
+                <button type="submit">Continue</button>
+            </div>
+
+        </form>
 
         <div id="right-login">
             <a href="#">Login</a>

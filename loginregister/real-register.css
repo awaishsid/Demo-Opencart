@@ -12,7 +12,8 @@ body, HTML {
 }
 
 /* Base styles for the login container */
-#login-container {
+#login-container form{
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -56,7 +57,7 @@ body, HTML {
     color: #44444a;
 }
 
-#left-login > button, #center-login > a >button {
+#left-login > button, #center-login >button {
     border: none;
     padding: 10px;
     border-radius: 10%;

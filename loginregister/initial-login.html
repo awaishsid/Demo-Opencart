@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="login.js" defer></script>
     
 
 </head>
@@ -77,18 +77,18 @@
             <a href="./real-register.html"><button>Continue</button></a>
         </div>
 
-        <div id="center-login">
+        <form action="../index.html" id="center-login">
             <h2>Returning Customer</h2><br>
             <h4>I am a returning customer</h4><br>
-           <p>E-mail Address</p> 
-           <input type="text" placeholder="E-mail Address">
-           <p>Password</p> 
-           <input type="password" placeholder="Password"><br>
+           <p>E-mail Address <span style="color: red;">*</span></p> 
+           <input type="text" placeholder="E-mail Address" id="email" required>
+           <p>Password  <span style="color: red;">*</span></p> 
+           <input type="password" placeholder="Password" id="password" required>
            <a href="" >Forgotten Password</a><br>
-           <button>
+           <button type="submit">
             Login
            </button>
-        </div>
+        </form>
 
 
         <div id="right-login">

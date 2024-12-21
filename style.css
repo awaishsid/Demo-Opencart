@@ -41,6 +41,9 @@ header{
     }
   }
 }
+.fa-cart-shopping{
+  cursor: pointer;
+}
 
 /* responsiveness for header */
 @media (max-width:800px){
@@ -247,7 +250,7 @@ main{
   padding: 10px;
   /* border: 1px solid rgba(128, 128, 128, 0.646); */
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.329);
-  >img{
+  > a img{
     width: 100%;
   }
   >.title{
@@ -289,36 +292,10 @@ main{
       background: rgba(128, 128, 128, 0.76);
       color: black;
     }
-    /* >i:hover::after{
-      content: 'Cart';
-      font-size: 10px;
-      width: 80%;
-      position: absolute;
-      top: -35px;
-      left: 0;
-      text-align: center;
-      background:black;
-      color: white;
-      padding-inline: 5px;
-      padding-block: 10px;
-      border-radius: 10px;
-    }
-    >i::before{
-      content: '';
-      width: 20px;
-      height: 20px;
-      background: black;
-      position: absolute;
-      top: -20px;
-      left: 50%;
-      transform: translateX(-50%);
-      transform: rotate(45deg);
-    } */
-
   }
 }
 .product:hover{
-  >img{
+  >a img{
     opacity: 0.5;
   }
 }
