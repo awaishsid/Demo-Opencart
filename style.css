@@ -551,3 +551,74 @@ hr{
     font-size: 12px;
   }
 }
+
+
+/* success dialog popup */
+.successdialog{
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.25s ease;
+  opacity: 0;
+  transform: translateY(-100%);
+  transform: translateX(-50%);
+  
+}
+.failuredialog{
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  transition: all 0.25s ease;
+  opacity: 0;
+  transform: translateY(-100%);
+  transform: translateX(-50%);
+  >.circ{
+    width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: red;
+  >i{
+    color: white;
+  }
+  }
+  
+}
+.circ{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: green;
+  >i{
+    color: white;
+  }
+}
+.showsuccessdialog{
+  transform: translateY(0px);
+  transform: translateX(-50%);
+  opacity: 1;
+  /* display: flex; */
+}

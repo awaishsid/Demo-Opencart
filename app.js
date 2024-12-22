@@ -87,6 +87,7 @@ fetaturedProducts.addEventListener('click', (e) => {
 function addtocart(i) {
     let con = cartproducts.some(el => el.id == i)
     if (!con) {
+        showpopup()
         cartproducts.push({
             id: i,
             quantity: 1,
@@ -94,6 +95,7 @@ function addtocart(i) {
         })
     }
     else {
+        failurepopup()
         let indx = cartproducts.indexOf(cartproducts.filter(el => el.id == innerWidth)[0])
         cartproducts.splice(indx, 1)
     }
@@ -252,3 +254,19 @@ function calldisplaydata(){
 document.querySelector('#gotocheckout').addEventListener('click',(e)=>{
     window.location.assign('./checkoutnwishlist/checkout.html')
 })
+
+
+function showpopup(){
+    clearTimeout(timer)
+    document.querySelector('.successdialog').classList.add('showsuccessdialog')
+    setTimeout(()=>{
+        document.querySelector('.successdialog').classList.remove('showsuccessdialog')
+    },2000)
+}
+function failurepopup(){
+    document.querySelector('.failuredialog').classList.add('showsuccessdialog')
+    timer=setTimeout(()=>{
+        document.querySelector('.failuredialog').classList.remove('showsuccessdialog')
+    },2000)
+}
+
