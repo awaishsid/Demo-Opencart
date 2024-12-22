@@ -1,0 +1,259 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.top-bar a:hover {
+    color: #00a1e5;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background: #e4dbdb;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 5px 0;
+    width: 120px;
+    z-index: 10;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 8px 10px;
+    color: #333;
+    transition: background-color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+    color: #00a1e5;
+}
+
+/* Logo and Search Bar */
+.logo-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #ffffff;
+    flex-wrap: wrap; /* Wrapping for responsiveness */
+}
+
+.logo h1 {
+    color: #00a1e5;
+    margin-bottom: 10px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    flex: 1;
+    max-width: 600px;
+    width: 100%;
+}
+
+.search-bar input {
+    padding: 8px;
+    flex-grow: 1;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.cart-info button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    height: 40px;
+    width: 250px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: #00a1e5;
+    padding: 10px 0;
+    flex-wrap: wrap; /* Wrapping for smaller screens */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Breadcrumb Section */
+.breadcrumb {
+    margin: 20px 30px;
+    font-size: 14px;
+    background-color: rgb(197, 197, 195);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Shopping Cart Section */
+.cart-content {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.cart-content h2 {
+    margin-bottom: 20px;
+}
+
+.cart-content p {
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.continue-btn {
+    background-color: #00a1e5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.continue-btn:hover {
+    background-color: #008bbd;
+}
+
+/* Responsive Design */
+
+/* Medium screens: Adjust layout for tablets and smaller laptops */
+@media (max-width: 1024px) {
+    .search-bar input {
+        width: 100%;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        margin: 5px;
+    }
+}
+
+/* Small screens: Adjust layout for phones */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+    }
+
+    .logo-search {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    .search-bar input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav li {
+        margin: 5px 0;
+    }
+
+    .cart-content {
+        padding: 20px;
+    }
+}
+
+/* Extra small screens: Minimal padding */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .logo h1 {
+        font-size: 24px;
+    }
+
+    .search-bar input {
+        font-size: 14px;
+    }
+
+    .continue-btn {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .breadcrumb {
+        font-size: 12px;
+        margin: 10px;
+    }
+}
